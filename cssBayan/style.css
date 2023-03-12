@@ -22,6 +22,7 @@ li{
   padding-bottom: 1rem;
   border-top: 2px solid #000000;
 }
+
 input,
 .step_img{
   display: none;
@@ -63,7 +64,8 @@ input,
 :checked~.title_box .icon{
   transform: rotate(-45deg);
 }
-@media (min-width: 800px) {
+
+@media (min-width: 768px) {
 .title {
     font-size: 2rem;
     padding-top: 1.2rem;
@@ -79,16 +81,36 @@ input,
     width: 60%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1281px) {
   .title {
     font-size: 2.5rem;
   }
-
   .title_box {
     font-size: 2.5rem;
   }
-
   .step_title {
     font-size: 2rem;
+  }
+  label:hover{
+    cursor: pointer;
+  }
+  .steps_item:hover .step_img {
+    display: block;
+    animation: anim_img 0.5s;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .steps_item:hover .icon{
+    transform: rotate(-45deg);
+  }
+  .icon{
+    display: none;
+  }
+  .steps_list:hover .icon{
+    display: block;
+    color: #000000;
+  }
+  .steps_list:hover .step_title {
+    color: #000000;
   }
 }
