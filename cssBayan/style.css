@@ -46,11 +46,14 @@ input,
 .title_box{
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #0000ff;
 }
 :checked~.title_box{
   color:#000000;
+}
+.step_title{
+  font-size: 1rem;
 }
 .icon {
   color: #000000;
@@ -59,4 +62,33 @@ input,
 }
 :checked~.title_box .icon{
   transform: rotate(-45deg);
+}
+@media (min-width: 800px) {
+.title {
+    font-size: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .title_box {
+    font-size: 2rem;
+  }
+  .step_title {
+    font-size: 1.5rem;
+  }
+  :checked~.step_img {
+    width: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .title_box {
+    font-size: 2.5rem;
+  }
+
+  .step_title {
+    font-size: 2rem;
+  }
 }
