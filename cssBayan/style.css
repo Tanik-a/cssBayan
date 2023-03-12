@@ -47,8 +47,10 @@ input,
 .title_box{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.5rem;
   color: #0000ff;
+  min-height: 4rem;
 }
 :checked~.title_box{
   color:#000000;
@@ -87,6 +89,7 @@ input,
   }
   .title_box {
     font-size: 2.5rem;
+    min-height: 4rem;
   }
   .step_title {
     font-size: 2rem;
