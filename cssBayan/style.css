@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e2e4e7;
+}
+li{
+  list-style: none;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.title{
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.steps_item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 2px solid #000000;
+}
+input,
+.step_img{
+  display: none;
+}
+@keyframes anim_img {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+:checked~.step_img {
+  display: block;
+  animation: anim_img 0.5s;
+  width: 50%;
+  margin: 0 auto;
+}
+.title_box{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #0000ff;
+}
+:checked~.title_box{
+  color:#000000;
+}
+.icon {
+  color: #000000;
+  font-weight: bold;
+  transition: transform 0.5s ease-in;
+}
+:checked~.title_box .icon{
+  transform: rotate(-45deg);
+}
