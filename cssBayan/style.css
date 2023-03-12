@@ -116,4 +116,11 @@ input,
   .steps_list:hover .step_title {
     color: #000000;
   }
+  .label:active .icon,
+  .label:active .step_title {
+    color: #0000ff;
+  }
+  .label:active .step_img{
+    opacity: 70%;
+  }
 }
