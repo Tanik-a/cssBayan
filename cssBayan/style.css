@@ -20,7 +20,7 @@ li{
 .steps_item {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-top: 2px solid #000000;
+  border-top: 0.2rem solid #000000;
 }
 
 input,
